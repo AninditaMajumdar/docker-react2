@@ -4,6 +4,6 @@ services:
 before_install:
   - docker build -t annie/docker-react -f Dockerfile.dev .
 script:
-  - docker run annie/docker-react npm run test -- --coverage
+  - docker run annie/docker-react
   - echo $TRAVIS_COMMIT
   
